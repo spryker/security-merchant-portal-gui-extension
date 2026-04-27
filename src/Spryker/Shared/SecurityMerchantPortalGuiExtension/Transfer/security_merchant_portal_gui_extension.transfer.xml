@@ -16,4 +16,19 @@
     <transfer name="MultiFactorAuth" strict="true">
     </transfer>
 
+    <transfer name="ResourceOwner">
+    </transfer>
+
+    <transfer name="OauthMerchantUserRestrictionRequest" strict="true">
+    </transfer>
+
+    <transfer name="OauthMerchantUserRestrictionResponse" strict="true">
+    </transfer>
+
+    <transfer name="ResourceOwnerRequest">
+    </transfer>
+
+    <transfer name="ResourceOwnerResponse">
+    </transfer>
+
 </transfers>
