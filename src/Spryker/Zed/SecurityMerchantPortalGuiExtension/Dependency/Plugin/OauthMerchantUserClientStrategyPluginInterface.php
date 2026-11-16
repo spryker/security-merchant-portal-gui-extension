@@ -24,10 +24,6 @@ interface OauthMerchantUserClientStrategyPluginInterface
      * - Typically checks the "state" query parameter to identify the OAuth provider.
      *
      * @api
-     *
-     * @param \Generated\Shared\Transfer\ResourceOwnerRequestTransfer $resourceOwnerRequestTransfer
-     *
-     * @return bool
      */
     public function isApplicable(ResourceOwnerRequestTransfer $resourceOwnerRequestTransfer): bool;
 
@@ -37,10 +33,6 @@ interface OauthMerchantUserClientStrategyPluginInterface
      * - Returns a response transfer with the resource owner data on success.
      *
      * @api
-     *
-     * @param \Generated\Shared\Transfer\ResourceOwnerRequestTransfer $resourceOwnerRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\ResourceOwnerResponseTransfer
      */
     public function getResourceOwner(ResourceOwnerRequestTransfer $resourceOwnerRequestTransfer): ResourceOwnerResponseTransfer;
 }

@@ -24,10 +24,6 @@ interface OauthMerchantUserAuthenticationStrategyPluginInterface
      * - Typically checks that required fields (e.g. provider, external ID) are present.
      *
      * @api
-     *
-     * @param \Generated\Shared\Transfer\ResourceOwnerTransfer $resourceOwnerTransfer
-     *
-     * @return bool
      */
     public function isApplicable(ResourceOwnerTransfer $resourceOwnerTransfer): bool;
 
@@ -37,10 +33,6 @@ interface OauthMerchantUserAuthenticationStrategyPluginInterface
      * - Returns null when no matching merchant user is found.
      *
      * @api
-     *
-     * @param \Generated\Shared\Transfer\ResourceOwnerTransfer $resourceOwnerTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantUserTransfer|null
      */
     public function resolveOauthMerchantUser(ResourceOwnerTransfer $resourceOwnerTransfer): ?MerchantUserTransfer;
 }

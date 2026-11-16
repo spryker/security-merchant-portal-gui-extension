@@ -23,10 +23,6 @@ interface OauthMerchantUserRestrictionPluginInterface
      * - Returns a response with isRestricted flag and optional error messages.
      *
      * @api
-     *
-     * @param \Generated\Shared\Transfer\OauthMerchantUserRestrictionRequestTransfer $oauthMerchantUserRestrictionRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\OauthMerchantUserRestrictionResponseTransfer
      */
     public function isRestricted(
         OauthMerchantUserRestrictionRequestTransfer $oauthMerchantUserRestrictionRequestTransfer

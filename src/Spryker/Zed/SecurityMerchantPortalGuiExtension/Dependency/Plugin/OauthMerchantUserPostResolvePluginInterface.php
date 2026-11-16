@@ -24,11 +24,6 @@ interface OauthMerchantUserPostResolvePluginInterface
      * - Receives the resolved merchant user and the raw resource owner data from the OAuth provider.
      *
      * @api
-     *
-     * @param \Generated\Shared\Transfer\MerchantUserTransfer $merchantUserTransfer
-     * @param \Generated\Shared\Transfer\ResourceOwnerTransfer $resourceOwnerTransfer
-     *
-     * @return void
      */
     public function postResolve(MerchantUserTransfer $merchantUserTransfer, ResourceOwnerTransfer $resourceOwnerTransfer): void;
 }

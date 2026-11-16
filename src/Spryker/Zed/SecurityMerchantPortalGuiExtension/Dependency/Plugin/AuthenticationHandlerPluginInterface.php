@@ -20,10 +20,6 @@ interface AuthenticationHandlerPluginInterface
      * - Checks if the plugin is applicable for the provided entity.
      *
      * @api
-     *
-     * @param string $entity
-     *
-     * @return bool
      */
     public function isApplicable(string $entity): bool;
 
@@ -33,10 +29,6 @@ interface AuthenticationHandlerPluginInterface
      * - Validates whether the code was verified.
      *
      * @api
-     *
-     * @param \Generated\Shared\Transfer\MultiFactorAuthValidationRequestTransfer $multiFactorAuthValidationRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\MultiFactorAuthValidationResponseTransfer
      */
     public function validateMerchantUserMultiFactorStatus(
         MultiFactorAuthValidationRequestTransfer $multiFactorAuthValidationRequestTransfer

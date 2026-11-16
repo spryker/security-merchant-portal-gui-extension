@@ -20,10 +20,6 @@ interface MerchantUserLoginRestrictionPluginInterface
      * - Runs after merchant user data is loaded from the data source.
      *
      * @api
-     *
-     * @param \Generated\Shared\Transfer\MerchantUserTransfer $merchantUserTransfer
-     *
-     * @return bool
      */
     public function isRestricted(MerchantUserTransfer $merchantUserTransfer): bool;
 }

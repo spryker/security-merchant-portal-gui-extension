@@ -19,10 +19,6 @@ interface MerchantUserCriteriaExpanderPluginInterface
      * - Expands `MerchantUserCriteriaTransfer`.
      *
      * @api
-     *
-     * @param \Generated\Shared\Transfer\MerchantUserCriteriaTransfer $merchantUserCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantUserCriteriaTransfer
      */
     public function expand(MerchantUserCriteriaTransfer $merchantUserCriteriaTransfer): MerchantUserCriteriaTransfer;
 }

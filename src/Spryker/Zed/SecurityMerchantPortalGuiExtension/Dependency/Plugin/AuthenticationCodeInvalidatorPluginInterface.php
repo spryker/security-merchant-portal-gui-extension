@@ -21,10 +21,6 @@ interface AuthenticationCodeInvalidatorPluginInterface
      * - Invalidates all active multi-factor authentication codes for the provided merchant user.
      *
      * @api
-     *
-     * @param \Generated\Shared\Transfer\MultiFactorAuthTransfer $multiFactorAuthTransfer
-     *
-     * @return void
      */
     public function invalidateMerchantUserCodes(MultiFactorAuthTransfer $multiFactorAuthTransfer): void;
 }

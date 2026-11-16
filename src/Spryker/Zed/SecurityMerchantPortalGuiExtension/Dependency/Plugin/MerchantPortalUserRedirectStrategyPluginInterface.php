@@ -16,10 +16,6 @@ interface MerchantPortalUserRedirectStrategyPluginInterface
      * - Returns `true` if this plugin can provide a post-login redirect URL for the given Merchant Portal request.
      *
      * @api
-     *
-     * @param \Symfony\Component\HttpFoundation\Request $request
-     *
-     * @return bool
      */
     public function isApplicable(Request $request): bool;
 
@@ -28,10 +24,6 @@ interface MerchantPortalUserRedirectStrategyPluginInterface
      * - Returns the URL to redirect to after a successful Merchant Portal login.
      *
      * @api
-     *
-     * @param \Symfony\Component\HttpFoundation\Request $request
-     *
-     * @return string
      */
     public function getRedirectUrl(Request $request): string;
 }
